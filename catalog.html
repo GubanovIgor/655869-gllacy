@@ -83,13 +83,107 @@
 		<h1>Сливочное мороженое</h1>
 		<section class="filter">
 			<h2 class="visually-hidden">Фильтр</h2>
-			<ul>
-				<li>Сортировка</li>
-				<li>Цена 100 руб. - 500 руб.</li>
-				<li>Жирность</li>
-				<li>Наполнители</li>
-				<li><button>Применить</button></li>
-			</ul>
+			<form>
+				<fieldset>
+					<legend>Сортировка</legend>
+					<ul>
+						<li>
+							<input class="sort" type="radio" name="sorting" id="popularity">
+							<label for="popularity">
+							по популярности
+							</label>
+						</li>
+						<li>
+							<input class="sort" type="radio" name="sorting" id="cheap">
+							<label for="cheap">
+							сначала недорогие
+							</label>
+						</li>
+						<li>
+							<input class="sort" type="radio" name="sorting" id="expensive">
+							<label for="expensive">
+							сначала дорогие
+							</label>
+						</li>
+						<li>
+							<input class="sort" type="radio" name="sorting" id="calorie">
+							<label for="calorie">
+							по жирности
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Цена: 100 руб. - 500 руб.</legend>
+					<input type="range" multiple min="100" max="500">
+				</fieldset>
+				<fieldset>
+					<legend>Жирность</legend>
+					<ul>
+						<li>
+							<input class="fat" type="radio" name="calorie" id="none">
+							<label for="none">
+							0%
+							</label>
+						</li>
+						<li>
+							<input class="fat" type="radio" name="calorie" id="low">
+							<label for="low">
+							до 10%
+							</label>
+						</li>
+						<li>
+							<input class="fat" type="radio" name="calorie" id="medium">
+							<label for="medium">
+							до 30%
+							</label>
+						</li>
+						<li>
+							<input class="fat" type="radio" name="calorie" id="high">
+							<label for="high">
+							выше 30%
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Наполнители</legend>
+					<ul>
+						<li>
+							<input class="filler" type="checkbox" name="chocolate" id="filter-chocolate">
+							<label for="filter-chocolate">
+							шоколадные
+							</label>
+						</li>
+						<li>
+							<input class="filler" type="checkbox" name="sugar" id="filter-sugar">
+							<label for="filter-sugar">
+							сахарные присыпки
+							</label>
+						</li>
+						<li>
+							<input class="filler" type="checkbox" name="fruit
+							" id="filter-fruit">
+							<label for="filter-fruit">
+							фрукты
+							</label>
+						</li>
+						<li>
+							<input class="filler" type="checkbox" name="syrup" id="filter-syrup">
+							<label for="filter-syrup">
+							сиропы
+							</label>
+						</li>
+						<li>
+							<input class="filler" type="checkbox" name="jam" id="filter-jam">
+							<label for="filter-jam">
+							джемы
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Применить</button>
+			</form>
 		</section>
 		
 		<section class="catalog">

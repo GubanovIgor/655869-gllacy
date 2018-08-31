@@ -33,7 +33,8 @@ body {
 .main-navigation {
 	font-size: 16px;
 	line-height: 18px;
-	font-family: "Roboto bold", "Arial", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 	color: #ffffff;
 	list-style: none;
 }
@@ -42,24 +43,28 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 }
 
 .time {
 	font-size: 14px;
 	line-height: 16px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .phone {
 	font-size: 22px;
 	line-height: 24px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .banner {
 	font-size: 60px;
 	line-height: 60px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .button {
@@ -70,12 +75,15 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
+	border: none;
 }
 
 .banner-button {
 	font-size: 32px;
 	line-height: 44px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 	border-radius: 70px;
 	padding: 20px 50px;
 }
@@ -84,6 +92,7 @@ body {
 	font-size: 35px;
 	line-height: 41px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 	padding-top: 23px;
 	padding-left: 20px;
 }
@@ -92,6 +101,7 @@ body {
 	font-size: 18px;
 	line-height: 22px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .stock {
@@ -124,12 +134,15 @@ body {
 	font-size: 45px;
 	line-height: 45px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
+	border: none;
 }
 
 .item-description {
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 	text-decoration: underline;
 }
 
@@ -147,12 +160,14 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 }
 
 .features p {
 	font-size: 24px;
 	line-height: 30px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .blog {
@@ -168,6 +183,7 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 }
 
 .blog a {
@@ -175,6 +191,7 @@ body {
 	font-size: 24px;
 	line-height: 30px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .mail {
@@ -190,6 +207,7 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 }
 
 .map {
@@ -207,10 +225,12 @@ body {
 	color: #323232;
 	border-radius: 20px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 }
 
 .address-bold {
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .main-footer a {
@@ -218,6 +238,7 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 	text-decoration: underline;
 }
 
@@ -238,6 +259,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 	list-style: none;
 }
 
@@ -249,6 +271,7 @@ h1 {
 	font-size: 35px;
 	line-height: 41px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: bold;
 }
 
 .sort {
@@ -264,10 +287,7 @@ h1 {
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Roboto", "Arial", sans-serif;
-}
-
-.price {
-	border: none;
+	font-weight: regular;
 }
 
 .price-select {
@@ -279,6 +299,7 @@ h1 {
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 	width: 200px;
 }
 
@@ -295,6 +316,7 @@ h1 {
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 	list-style: none;
 	width: 200px;
 }
@@ -312,6 +334,7 @@ h1 {
 	font-size: 16px;
 	line-height: 18px;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: regular;
 	list-style: none;
 	width: 200px;
 }
@@ -322,19 +345,6 @@ h1 {
 
 .catalog img {
 	border-radius: 50%;
-}
-
-.price {
-	font-size: 45px;
-	line-height: 45px;
-	font-family: "Roboto", "Arial", sans-serif;
-}
-
-.item-description {
-	font-size: 16px;
-	line-height: 22px;
-	font-family: "Roboto", "Arial", sans-serif;
-	text-decoration: underline;
 }
 
 .pagination {

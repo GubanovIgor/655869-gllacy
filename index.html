@@ -10,69 +10,71 @@
   <body>
   
 	<header class="main-header">
-		<nav class="site-navigation">
+		<nav class="container">
 			<div class="site_user_navigation">
-				<section>
-					<h2 class="visually-hidden">Главное меню</h2>
-					<ul class="main-navigation">
-						<li>
-							<a class="main-header-logo" href="#">
-								<img alt="Логотип Gllacy Shop" src="img/logo.svg" width="154" height="64">
-							</a>
-						</li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">О Компании</a></li>
-					</ul>
-					<!--
-					<section class="main-menu">
-						<h2 class="visually-hidden">Выпадающее меню каталога</h2>
-						<ul class="catalog-navigation">
-							<li><a href="#">Новинки</a></li>
-							<li><a href="#">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лёд</a></li>
-							<li><a href="#">Мелорин</a></li>
+				<div class="site-user-navigation">
+					<section>
+						<h2 class="visually-hidden">Главное меню</h2>
+						<ul class="main-navigation">
+							<li>
+								<a class="main-header-logo" href="#">
+									<img alt="Логотип Gllacy Shop" src="img/logo.svg" width="154" height="64">
+								</a>
+							</li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">О Компании</a></li>
 						</ul>
-					</section>
-					-->
-				</section>
-				
-				<section>
-					<h2 class="visually-hidden">Пользовательский интерфейс</h2>
-					<ul class="user-navigation">
-						<li><a href="#">Поиск</a></li>
-						<li><a href="#">Вход</a></li>
-						<li><a href="#">Корзина</a></li>
-					</ul>
-					<!--
-					<section class="search">
-						<h2 class="visually-hidden">Выпадющее меню кнопки Поиск</h2>
-						<input>
+						<!--
+						<section class="main-menu">
+							<h2 class="visually-hidden">Выпадающее меню каталога</h2>
+							<ul class="catalog-navigation">
+								<li><a href="#">Новинки</a></li>
+								<li><a href="#">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лёд</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
+						</section>
+						-->
 					</section>
 					
-					<section class="login">
-						<h2 class="visually-hidden">Выпадющее меню кнопки Вход</h2>
-						<form action="https://echo.htmlacademy.ru" method="post">
-							<input type="text" name="login" id="login-field" placeholder="Электронная почта">
-							<input type="password" name="password" id="password-field" placeholder="Пароль">
+					<section>
+						<h2 class="visually-hidden">Пользовательский интерфейс</h2>
+						<ul class="user-navigation">
+							<li><a href="#">Поиск</a></li>
+							<li><a href="#">Вход</a></li>
+							<li><a href="#">Корзина</a></li>
+						</ul>
+						<!--
+						<section class="search">
+							<h2 class="visually-hidden">Выпадющее меню кнопки Поиск</h2>
+							<input>
+						</section>
+						
+						<section class="login">
+							<h2 class="visually-hidden">Выпадющее меню кнопки Вход</h2>
+							<form action="https://echo.htmlacademy.ru" method="post">
+								<input type="text" name="login" id="login-field" placeholder="Электронная почта">
+								<input type="password" name="password" id="password-field" placeholder="Пароль">
 
-							<input type="submit" value="Войти">
-						</form>
-						<ul class="registration">
-							<li><a href="#">Забыли пароль?</a></li>
-							<li><a href="#">Новая регистрация</a></li>
-						</ul>
+								<input type="submit" value="Войти">
+							</form>
+							<ul class="registration">
+								<li><a href="#">Забыли пароль?</a></li>
+								<li><a href="#">Новая регистрация</a></li>
+							</ul>
+						</section>
+						
+						<section class="search">
+							<h2 class="visually-hidden">Выпадющее меню корзины</h2>
+							<a href="#">Оформить заказ</a>
+						</section>
+						-->
 					</section>
-					
-					<section class="search">
-						<h2 class="visually-hidden">Выпадющее меню корзины</h2>
-						<a href="#">Оформить заказ</a>
-					</section>
-					-->
-				</section>
+				</div>
 			</div>
-			<div class="contacts_container">
+			<div class="contacts-container">
 				<section class="contacts">
 					<h2 class="visually-hidden">Контактные данные</h2>
 					<p class="time">С 10 до 20, ежедневно</p>
@@ -82,10 +84,9 @@
 		</nav>
 	</header>
 	
-	<main class="container">
-		<div class="offers">
+	<main>
 			<h1 class="visually-hidden">Gllacy Shop</h1>
-			<section class="gallery">
+			<section class="container">
 				<h2 class="visually-hidden">Призыв к действию</h2>
 				<h3 class="banner">Крем-брюле и пломбир<br> с малиновым джемом</h3>
 				<!--
@@ -95,17 +96,11 @@
 				<h3 class="banner">Пломбир с помадкой<br> и клубничный щербет</h3>
 				<img width="1079" height="854" src="img/banner-3.png" alt="Пломбир с помадкой и клубничный щербет">
 				-->
-			</section>
-			
-			<div class="switch_button">
-				<ul class="switch">
-					<li><button></li>
-					<li><button></li>
-					<li><button></li>
-				</ul>
 				<a class="button banner-button" href="#">Давайте оба!</a>
+			</section>
 			</div>
-			
+		
+		<div class="container">
 			<div class="stock-container">
 				<h2 class="visually-hidden">Акции</h2>
 				<section class="stock stock-raspberry">
@@ -119,9 +114,6 @@
 					<a class="button" href="#">Хочу шоколадки!</a>
 				</section>
 			</div>
-		</div>
-		
-		<div class="main-content">
 			<section class="catalog-container">
 				<h2 class="visually-hidden">Хит продаж</h2>
 				<ul class="catalog">
@@ -159,7 +151,7 @@
 				</ul>
 			</section>
 			
-			<div class="blog_mail">
+			<div class="stock-container">
 				<article class="blog">
 					<h2 class="visually-hidden">Блог</h2>
 					<p>Новое в нашем блоге</p>

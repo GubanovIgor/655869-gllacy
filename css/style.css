@@ -34,12 +34,12 @@ body {
 	display: none;
 }
 
-.site-navigation {
+.container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	
-	outline: 2px solid green;
+	outline: 2px solid red;
 }
 
 .main-navigation {
@@ -51,7 +51,7 @@ body {
 	display: flex;
 	align-items: center;
 	
-	outline: 2px solid red;
+	outline: 2px solid green;
 }
 
 .main-navigation li {
@@ -70,7 +70,7 @@ body {
 	margin-right: 27px;
 	display: flex;
 	
-	outline: 2px solid blue;
+	outline: 2px solid green;
 }
 
 .user-navigation a {
@@ -82,18 +82,13 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	
-	outline: 2px solid yellow;
+	outline: 2px solid blue;
 	width: 1200px;
 }
 
 .contacts {
-	width: 165px;
-	height: 100px;
-	outline: 2px solid brown;
+	outline: 2px solid green;
 	margin-right: 27px;
-	
-	display: flex;
-	flex-direction: column;
 }
 
 .contacts-container {
@@ -101,23 +96,7 @@ body {
 	justify-content: flex-end;
 	
 	width: 1200px;
-	outline: 2px solid green;
-	height: 100px;
-}
-
-.offers {
-	height: 881px;
-	margin-bottom: 40px;
-	
-	background-image: url("../img/banner-1.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-	outline: 2px solid red;
+	outline: 2px solid blue;
 }
 
 .switch-button {
@@ -128,25 +107,6 @@ body {
 	margin-bottom: 41px;
 	
 	outline: 2px solid blue;
-}
-
-.gallery {
-	display: flex;
-	flex-direction: column;
-	width: 1200px;
-	height: 543px;
-	
-	outline: 2px solid blue;
-}
-
-.switch{
-	list-style: none;
-	
-	display: flex;
-}
-
-.switch li{
-	margin-right: 10px;
 }
 
 .time {
@@ -162,7 +122,7 @@ body {
 .banner {
 	font-size: 60px;
 	line-height: 60px;
-	margin-top: 395px;
+	margin-top: 195px;
 }
 
 .button {
@@ -181,10 +141,7 @@ body {
 	line-height: 44px;
 	border-radius: 70px;
 	
-	flex-basis: 60px;
-	flex-grow:0.3;
-	
-	margin-left: 355px;
+	margin-bottom: 40px;
 }
 
 .sale {
@@ -202,6 +159,7 @@ body {
 .stock-container {
 	width: 1200px;
 	height: 229px;
+	margin-bottom: 40px;
 	
 	display: flex;
 	justify-content: space-between;
@@ -230,26 +188,6 @@ body {
 	margin-right: 27px;
 }
 
-.main-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-	height: 1440px;
-	
-	outline: 2px solid red;
-}
-
-.catalog-navigation {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-	height: 325px;
-	
-	outline: 2px solid red;
-}
-
 .breadcrumbs-menu {
 	display: flex;
 	align-items: center;
@@ -276,13 +214,12 @@ body {
 	outline: 2px solid blue;
 }
 
-.sort-price-fat {
+.sort-form {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	
 	width: 1200px;
-	height: 100px;
-	margin-bottom: 20px;
 	
 	outline: 2px solid blue;
 }
@@ -298,30 +235,11 @@ body {
 	margin-right: 20px;
 }
 
-.filler-button {
-	display: flex;
-	align-items: center;
-	
-	width: 1200px;
-	height: 100px;
-	margin-bottom: 20px;
-	
-	outline: 2px solid blue;
-}
-
 .filler-fieldset-select {
 	display: flex;
 	justify-content: space-between;
 	
 	min-width: 705px;
-}
-
-.catalog-container {
-	display: flex;
-	height: 1050px;
-	justify-content: center;
-	
-	outline: 2px solid red;
 }
 
 .catalog {
@@ -331,7 +249,7 @@ body {
 	align-content: space-between;
 	
 	width: 1200px;
-	min-height: 330px;
+	margin-bottom: 40px;
 	
 	outline: 2px solid blue;
 	list-style: none;
@@ -346,18 +264,11 @@ body {
 	width: 266px;
 	height: 330px;
 	
-	outline: 2px solid blue;
+	outline: 2px solid green;
 }
 
 .catalog img {
 	border-radius: 50%;
-}
-
-.pagination-container {
-	display: flex;
-	justify-content: center;
-	
-	outline: 2px solid red;
 }
 
 .pagination {
@@ -365,7 +276,6 @@ body {
 	justify-content: flex-end;
 	
 	width: 1200px;
-	height: 50px;
 	
 	outline: 2px solid blue;
 }
@@ -383,7 +293,6 @@ body {
 	justify-content: space-around;
 	
 	width: 1200px;
-	min-height: 220px;
 	margin-bottom: 40px;
 	
 	outline: 2px solid blue;
@@ -407,7 +316,6 @@ body {
 
 .features {
 	width: 1146px;
-	height: 307px;
 	border-radius: 20px;
 	background-image: url("../img/bg-wafer.jpg");
 	background-color: #e6d5b1;
@@ -483,8 +391,6 @@ body {
 .main-footer {
 	display: flex;
 	justify-content: center;
-	
-	height: 105px;
 	
 	outline: 2px solid blue;
 }

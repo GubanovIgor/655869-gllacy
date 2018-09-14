@@ -105,6 +105,11 @@ body {
 	background-color: #a0b5a9;
 }
 
+.user-link {
+	margin-right: 8px;
+}
+
+
 .search-link {
 	width: 33px;
 }
@@ -115,42 +120,6 @@ body {
 
 .basket-link {
 	width: 100px;
-}
-
-.search-link::before {
-	content: "";
-  
-	width: 17px;
-	height: 17px;
-  
-	background-image: url("../img/loupe.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.login-link::before {
-	content: "";
-  
-	width: 21px;
-	height: 19px;
-	margin-right: 8px;
-
-	color: white;
-	background-image: url("../img/login.png");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.basket-link::before {
-	content: "";
-  
-	width: 21px;
-	height: 20px;
-	margin-right: 8px;
-  
-	background-image: url("../img/basket.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .contacts {
@@ -503,7 +472,10 @@ body {
 }
 
 .features-list li {
+	position: relative;
+	
 	text-align: left;
+	
 	padding-bottom: 27px;
 	padding-left: 58px;
 }
@@ -643,6 +615,7 @@ body {
 	background-image: url("../img/bg-map.jpg");
 	background-color: #f7f1d9;
 	background-repeat: no-repeat;
+	background-position: center;
 	
 	margin: 0 auto;
 }
@@ -707,9 +680,20 @@ body {
 	display: flex;
 	margin-right: 11px;
 	text-decoration: none;
-	border-radius: 20px;
 	
-	border: 2px solid #c2cec7;
+	fill: #e6ebe9;
+}
+
+.social-button:hover svg {
+	fill: #ffffff;
+}
+
+.social-button:active svg {
+	fill: #e9e9e9;
+}
+
+.social-button-color {
+	
 }
 
 .footer-info {
@@ -914,9 +898,36 @@ body {
 }
 
 .pagination a {
+	display: block;
+	
+	width: 26px;
+	height: 26px;
+	
 	margin-right: 20px;
+	
 	text-decoration: none;
 	color: #ffffff;
+	
+	border-radius: 50%;
+	
+	padding: auto;
+}
+
+.pagination-number:hover {
+	background-color: #9db1a5;
+	border-radius: 50%;
+}
+
+.pagination-number:active {
+	background-color: #ffffff;
+	border-radius: 50%;
+	color: #323232;
+}
+
+.pagination-number:focus {
+	background-color: #ffffff;
+	border-radius: 50%;
+	color: #323232;
 }
 
 .registration a:hover,
@@ -931,6 +942,10 @@ body {
 	background-color: #f7f6f3;
 	color: #323232;
 	border-radius: 50px;
+}
+
+.user-navigation a:hover .fill-black {
+	fill: black;
 }
 
 .main-navigation-point:active {

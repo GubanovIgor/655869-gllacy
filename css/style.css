@@ -37,8 +37,6 @@ body {
 	
 	width: 1200px;
 	margin: 0 auto;
-	
-	outline: 2px solid red;
 }
 
 .button {
@@ -69,6 +67,7 @@ body {
 .site-user-navigation {
 	display: flex;
 	align-items: center;
+	
 }
 
 .main-navigation {
@@ -115,7 +114,6 @@ body {
 	border-radius: 5px;
 }
 
-/* Выпадашка основного меню */
 .catalog-navigation {
 	list-style: none;
 	margin: 0;
@@ -125,7 +123,7 @@ body {
 }
 
 .main-menu {
-	display: inline;
+	display: none;
 	
 	position: absolute;
 	top: 60px;
@@ -138,6 +136,10 @@ body {
 	text-align: left;
 	
 	z-index: 1;
+}
+
+.main-menu-point:hover .main-menu {
+	display: block;
 }
 
 .main-menu a {
@@ -161,15 +163,13 @@ body {
 	background-color: #fbded8;
 	cursor: pointer;
 }
-/* Выпадашка основного меню */
 
-/* Выпадашка поиска */
 .search {
 	position: absolute;
 	top: 59px;
 	right: 239px;
 	
-	display: inline;
+	display: none;
 	
 	
 	height: 84px;
@@ -178,26 +178,32 @@ body {
 	z-index: 1;
 }
 
+.search-point:hover .search {
+	display: block;
+}
+
 .search input {
 	width: 311px;
 	height: 44px;
 	
 	margin-top: 19px;
 }
-/* Выпадашка поиска */
 
-/* Выпадашка входа */
 .login {
 	position: absolute;
 	top: 59px;
 	right: 137px;
 	
-	display: inline;
+	display: none;
 	
 	width: 277px;
 	height: 214px;
 	
 	z-index: 1;
+}
+
+.login-point:hover .login {
+	display: block;
 }
 
 .login-input {
@@ -232,13 +238,11 @@ body {
 	font-size: 13px;
 	line-height: 24px;
 }
-/* Выпадашка входа */
 
-/* Выпадашка форма обратной связи */
 .feedback {
 	position: fixed;
 	
-	display: inline;
+	display: none;
 	
 	top: 120px;
 	left: 50%;
@@ -285,11 +289,13 @@ body {
 	margin-right: 25px;
 	margin-left: auto;
 }
-/* Выпадашка форма обратно свзяи */
 
-/* Выпадашка корзины */
+.modal-show {
+  display: block;
+}
+
 .basket {
-	display: inline;
+	display: none;
 	box-sizing: border-box;
 	
 	position: absolute;
@@ -302,6 +308,10 @@ body {
 	padding-top: 25px;
 	
 	z-index: 1;
+}
+
+.basket-point:hover .basket {
+	display: block;
 }
 
 .basket-list {
@@ -449,7 +459,6 @@ body {
 	float: right;
 	margin-right: 15px;
 }
-/* Выпадашка корзины */
 
 .modal-close {
 	position: absolute;
@@ -587,7 +596,7 @@ body {
   position: relative;
   
   padding-top: 321px;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   
   text-align: center;
   color: #ffffff;
@@ -714,7 +723,7 @@ body {
 	justify-content: space-around;
 	
 	padding: 0;
-	margin-bottom: 0;
+	margin-bottom: 40px;
 	
 	list-style: none;
 }
@@ -761,15 +770,16 @@ body {
 	font-size: 35px;
 	line-height: 41px;
 	
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 	margin-left: 27px;
 }
 
-/* Фильтр */
 .sort-form {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	
+	margin-bottom: 40px;
 }
 
 .sort-fat-price-filler {
@@ -863,15 +873,13 @@ body {
 
 	cursor: pointer;
 }
-/* Фильтр */
 
-/* Каталог */
 .catalog {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	
-	margin-bottom: 0;
+	margin-bottom: 40px;
 	padding: 0;
 	list-style: none;
 }
@@ -914,9 +922,7 @@ body {
 	text-decoration: none;
 	border-bottom: 1px solid #9db1a5;
 }
-/* Каталог */
 
-/* Преимущества */
 .features {
 	display: flex;
 	align-items: center;
@@ -929,7 +935,7 @@ body {
 	background-color: #e6d5b1;
 	color: #323232;
 	
-	margin-bottom: 0;
+	margin-bottom: 40px;
 }
 
 .features-wrapper {
@@ -993,12 +999,12 @@ body {
 	
 	text-align: left;
 }
-/* Преимущества */
 
-/* Блог и подписка */
 .blog-mail {
 	display: flex;
 	justify-content: center;
+	
+	margin-bottom: 40px;
 }
 
 .blog {
@@ -1087,10 +1093,9 @@ body {
 	line-height: 24px;
 	text-indent: 14px;
 }
-/* Блог и подписка */
 
-/* Карта */
 .map {
+	width: 1200px;
 	height: 430px;
 	
 	background-image: url("../img/bg-map.jpg");
@@ -1143,9 +1148,7 @@ body {
 .address-bold {
 	font-weight: 600;
 }
-/* Карта */
 
-/* Футер */
 .main-footer-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -1251,7 +1254,6 @@ body {
 	line-height: 18px;
 	font-weight: 400;
 }
-/* Футер */
 
 .mail-form {
 	width: 439px;
@@ -1285,12 +1287,11 @@ body {
 	margin-right: 8px;
 }
 
-/* Пагинатор */
 .pagination {
 	display: flex;
 	justify-content: flex-end;
 	
-	outline: 2px solid blue;
+	margin-top: 60px;
 }
 
 .pagination a {
@@ -1305,8 +1306,6 @@ body {
 	color: #ffffff;
 	
 	border-radius: 50%;
-	
-	padding: auto;
 }
 
 .pagination-number:hover {
@@ -1325,7 +1324,6 @@ body {
 	border-radius: 50%;
 	color: #323232;
 }
-/* Пагинатор */
 
 .main-navigation-point:hover,
 .user-navigation a:hover {
